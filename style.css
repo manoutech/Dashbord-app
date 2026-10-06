@@ -49,12 +49,44 @@ body{
    -webkit-transition: all 0.5s;
 }
 
-#sidebar.sidebar-responsive {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 260px;
-    z-index: 10;
+.sidebar-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px 30px 30px;
+    margin-bottom: 30px;
+}
+
+.sidebar-title > span {
+    display:none;
+}
+
+.sidebar-brand{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sidebar-list{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.sidebar-list-item{
+    padding: 20px 20px 20px 20px;
+    cursor: pointer;
+}
+
+.sidebar-list-item:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.sidebar-responsive {
+    display: inline !important;
+    position: absolute;
+    z-index: 12 !important;
 }
 
 .main-container{
